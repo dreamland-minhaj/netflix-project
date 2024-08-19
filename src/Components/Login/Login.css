@@ -1,0 +1,93 @@
+.login-area{
+    position: relative;
+    width: 100%;
+    margin:0 auto;
+    height: 900px; /* Adjust as needed */
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/20bf1f4d-1c73-48fd-8689-310d6dd80efc/c189e65a-ee63-4eb2-bf50-a326fa27e2d8/BD-en-20240812-POP_SIGNUP_TWO_WEEKS-perspective_WEB_722e6c5b-1615-42d5-9aa1-7d15a7dda307_small.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login-area::before{
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity */
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+.login-box{
+    width:450px;
+    margin:0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding:48px 68px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 95px;
+    left: 450px;
+    border-radius: 5px;
+}
+.login-box h1{
+    color: #fff;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size:32px;
+    font-weight: 700;
+}
+.login-box input{
+    width: 100%;
+    padding: 18px 0px;
+    margin-bottom: 27px;
+    background: #00000000;
+    border: 1px solid #f10505;
+    border-radius: 5px;
+}
+.login-box input::placeholder{
+    font-size:15px;
+    padding:0px 10px;
+    color:#fff;
+}
+.login-box button{
+    width:100%;
+    background-color: #C11119;
+    padding:10px 0px;
+    text-align: center;
+    color:#fff;
+    font-size:16px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.login-box button:hover{
+    background-color: #b80c15;
+}
+
+.login-box button:last-child{
+    background-color:#646161b8;
+}
+.login-box h2{
+    text-align:center;
+    color:#fff;
+    font-family:  Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .login-area{
+        background-color: black;
+        background-image: none;
+        
+    }
+    .login-box{
+        position: absolute;
+        top:0px;
+        left:0px;
+    }
+    
+  }
+  
+
